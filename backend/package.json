@@ -4,9 +4,9 @@
   "description": "Mentor recommendation engine API for MentorsMind",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
-    "start": "node dist/index.js",
-    "dev": "ts-node-dev src/index.ts",
+    "build": "node init && tsc",
+    "start": "node init && node dist/index.js",
+    "dev": "node init && ts-node-dev src/index.ts",
     "migrate": "node database/run-migrations.js",
     "test": "jest --runInBand",
     "test:coverage": "jest --runInBand --coverage"
