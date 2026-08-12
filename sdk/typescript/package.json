@@ -4,7 +4,7 @@
   "description": "Fluxora TypeScript SDK",
   "main": "dist/index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "node init && tsc",
     "test": "jest"
   },
   "dependencies": {},
